@@ -1,1 +1,2 @@
 Откроем на редактирование конфигурационный файл MariaDB: vim /etc/mysql/mariadb.conf.d/50-server.cnf
+https://www.dmosk.ru/instruktions.php?object=mariadb-cluster
