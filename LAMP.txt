@@ -1,7 +1,7 @@
-Обновляем все пакеты: sudo apt update && sudo apt upgrade
-Устанавливаем Apache: sudo apt install apache2
-Устанавливаем MariaDB: sudo apt install mariadb-server mariadb-client
-Устанавливаем основные параметры MYSQL: sudo mysql_secure_installation
+Обновляем все пакеты: apt update && sudo apt upgrade
+Устанавливаем Apache: apt install apache2
+Устанавливаем MariaDB: apt install mariadb-server mariadb-client
+Устанавливаем основные параметры MYSQL: mysql_secure_installation
 
 Enter current password for root (enter for none): Enter
 Set a root password? [Y/n] Y
@@ -10,11 +10,11 @@ Disallow root login remotely? [Y/n] y
 Remove test database and access to it? [Y/n] y
 Reload privilege tables now? [Y/n] y
 
-Устанавливаем PHP: sudo apt install php libapache2-mod-php php-mysql
-Устанавливаем доп. модули для PHP: sudo apt install php-redis php-zip
-Перезагружаем Apache: sudo systemctl restart apache2
-Устанавливаем phpmyadmin: sudo apt install phpmyadmin
+Устанавливаем PHP:  apt install php libapache2-mod-php php-mysql
+Устанавливаем доп. модули для PHP:  apt install php-redis php-zip
+Перезагружаем Apache:  systemctl restart apache2
+Устанавливаем phpmyadmin:  apt install phpmyadmin
 
-sudo ln -s /etc/phpmyadmin/apache.conf /etc/apache2/conf-available/phpmyadmin.conf  
-sudo a2enconf phpmyadmin.conf 
-sudo systemctl reload apache2.service
+ln -s /etc/phpmyadmin/apache.conf /etc/apache2/conf-available/phpmyadmin.conf  
+a2enconf phpmyadmin.conf 
+systemctl reload apache2.service
